@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Donation Page</title>
+</head>
+<body>
+    <h1>Support [Client's Name] on Twitch!</h1>
+    <form id="donation-form">
+        <label for="amount">Choose an amount:</label>
+        <select id="amount" name="amount">
+            <option value="5">$5</option>
+            <option value="10">$10</option>
+            <option value="20">$20</option>
+            <option value="custom">Custom</option>
+        </select>
+        <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter custom amount" style="display:none;">
+        <button type="submit">Donate</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
